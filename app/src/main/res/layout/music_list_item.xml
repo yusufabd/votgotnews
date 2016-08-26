@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/vk_grey_color"
+    >
+
+    <ImageView
+        android:layout_width="48dp"
+        android:layout_height="54dp"
+        android:id="@+id/play_pause"
+        android:src="@drawable/play"/>
+
+    <LinearLayout
+        android:layout_width="290dp"
+        android:layout_height="54dp"
+        android:orientation="vertical"
+        android:id="@+id/layout_music_info"
+        android:layout_toLeftOf="@+id/share"
+        android:layout_toRightOf="@+id/play_pause"
+        android:layout_toEndOf="@+id/play_pause">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/music_title"
+            android:text="Chop Suey"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/music_author"
+            android:text="SOAD"/>
+
+        <SeekBar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/seek_bar"/>
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/share"
+        android:src="@drawable/share"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"/>
+
+</RelativeLayout>

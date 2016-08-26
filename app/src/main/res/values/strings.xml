@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">VOT GOT News</string>
+    <string name="app_pref_name">VOT_GOT_News_pref</string>
+    <string name="pref_user_id_key">pref_key_user_id</string>
+    <integer name="com_vk_sdk_AppId">5601232</integer>
+</resources>
